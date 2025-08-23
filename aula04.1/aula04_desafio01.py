@@ -16,9 +16,11 @@ match opcao:
         print(f'Celsius para Fahrenheit: {((temperatura * 9) / 5) + 32:.2f}')
     case '2':  # Kelvin
         print(f'Kelvin para Celsius: {temperatura - 273.15:.2f}')
-        print(f'Kelvin para Fahrenheit: {((temperatura - 273.15) * 9) / 5 + 32:.2f}')
+        print(
+            f'Kelvin para Fahrenheit: {((temperatura - 273.15) * 9) / 5 + 32:.2f}')
     case '3':  # Fahrenheit
         print(f'Fahrenheit para Celsius: {((temperatura - 32) * 5) / 9:.2f}')
-        print(f'Fahrenheit para Kelvin: {(((temperatura - 32) * 5) / 9) + 273.15:.2f}')
-    case _:  # Caso inválido
+        print(
+            f'Fahrenheit para Kelvin: {(((temperatura - 32) * 5) / 9) + 273.15:.2f}')
+    case _:
         print("Opção inválida!")
